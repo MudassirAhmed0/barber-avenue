@@ -144,7 +144,7 @@ const Footer = () => {
           </div>
           <div className="lg:w-[24%] w-full flex flex-col lg:gap-y-vw20 gap-y-3 lg:text14 mtext14 font-inter">
             <span className="font-bold lg:text22 mtext18">
-              Be Part of Street's
+              Be Part of Street&apos;s
             </span>
             <div className="flex flex-col lg:gap-y-vw12 gap-y-3">
               <div className="flex items-center gap-2 bg-white py-3 px-3 rounded-lg overflow-hidden">
