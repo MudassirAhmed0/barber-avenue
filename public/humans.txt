@@ -1,0 +1,10 @@
+/* TEAM */
+Developer: Brackets Technology  
+Designer: Brackets Technology  
+Contact: brackets@brackets-tech.com
+Website: https://brackets-tech.com/
+
+ 
+/* SITE */
+Built with: Next.js, Tailwind CSS
+Hosted on: Vercel
