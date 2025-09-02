@@ -12,31 +12,31 @@ import StandardBtn from "./link-buttons/StandardBtn";
 const Hero = () => {
   const heroSlides = [
     {
-      title: "Master The Fade",
+      title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
       image:
-        "https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=2070&auto=format&fit=crop", // urban street
+        "https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg", // urban street
     },
     {
-      title: "Master The Fade2",
+      title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
       image:
         "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2070&auto=format&fit=crop", // building / community block
     },
     {
-      title: "Master The Fade3",
+      title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
       image:
-        "https://images.unsplash.com/photo-1505731132164-cca5eeb1d8a2?q=80&w=2070&auto=format&fit=crop", // street art / graffiti wall
+        "https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg", // street art / graffiti wall
     },
     {
-      title: "Master The Fade4",
+      title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
       image:
-        "https://images.unsplash.com/photo-1600132806370-bd93cfca9a9c?q=80&w=2070&auto=format&fit=crop", // street sign focus
+        "https://images.pexels.com/photos/1570806/pexels-photo-1570806.jpeg", // street sign focus
     },
     {
-      title: "Master The Fade5",
+      title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
       image:
         "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=2070&auto=format&fit=crop", // avenue / community vibe
@@ -51,7 +51,7 @@ const Hero = () => {
         fadeEffect={{ crossFade: true }}
         loop
         speed={800}
-        // autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         className="atlwh_Full !absolute z-[2] w-full"
       >
@@ -63,12 +63,12 @@ const Hero = () => {
             <span className="hero_gradient atlwh_Full pointer-events-none z-[1]"></span>
 
             <div className="atlwh_Full">
-              <Image
+              <img
                 fill
                 alt={heroSlide.subtitle}
                 src={heroSlide.image}
-                unoptimized
-                className="object-cover"
+                
+                className="object-cover w-full h-full absolute top-0 left-0"
               />
             </div>
             <div className="relative z-[2] flex flex-col lg:gap-y-vw20 gap-y-4 items-center myContainer">

@@ -11,13 +11,13 @@ const Products = () => {
       link: "/",
     },
     {
-      title: "APPAREL",
+      title: "Clothing",
       image:
         "https://fadedculture.com/cdn/shop/files/file001_Album_-1.jpg?v=1747415201&width=1080",
       link: "/",
     },
     {
-      title: "HAIR PRODUCTS",
+      title: "Cologene AfterShave",
       image:
         "https://fadedculture.com/cdn/shop/files/clay_4.jpg?v=1727901050&width=1080",
       link: "/",
