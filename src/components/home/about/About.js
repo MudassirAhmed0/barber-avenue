@@ -6,13 +6,6 @@ import { IoLogoInstagram } from "react-icons/io5";
 const About = () => {
   return (
     <section className="relative lg:py-vw180 py-[60px] sm:py-[120px]">
-      <span
-        style={{
-          background:
-            "linear-gradient(180deg, #7FFF6B 3.25%, rgba(173, 255, 160, 0.80) 30.18%, rgba(239, 255, 236, 0.50) 66.1%, rgba(241, 255, 238, 0.10) 96.62%)",
-        }}
-        className="atlwh_Full pointer-events-none"
-      ></span>
       <div className="flex flex-wrap items-center justify-center lg:gap-vw60 gap-4 relative z-[2] myContainer">
         <div className="lg:w-[40%] lg:h-[30vw] w-full h-[300px] relative rounded-2xl overflow-hidden">
           <Image

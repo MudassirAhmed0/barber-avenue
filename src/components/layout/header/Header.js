@@ -73,7 +73,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-[#EEFFEC] header_bg z-10">
+      <header className="fixed top-0 left-0 w-full bg-white header_bg z-10">
         <div className="flex items-center justify-between lg:px-vw50 lg:py-vw20 px-5 py-10">
           <Link
             href={"/"}
@@ -90,7 +90,7 @@ const Header = () => {
                 >
                   <div
                     onClick={toggleDropDown}
-                    className="flex cursor-pointer lg:gap-x-vw4 gap-x-4 items-center lg:text-black/60 lg:group-hover:text-black text-black transition"
+                    className="flex cursor-pointer lg:gap-x-vw4 gap-x-4 items-center lg:text-black lg:group-hover:text-green text-white transition"
                   >
                     {navLink.dropDown ? (
                       <button className="capitalize">{navLink.title}</button>
@@ -105,11 +105,20 @@ const Header = () => {
                           open ? "-scale-100" : "scale-100"
                         } relative lg:size-vw20 size-4 lg:group-hover:opacity-100 lg:opacity-60 opacity-100 lg:group-hover:-scale-y-100 transition`}
                       >
-                        <Image
-                          fill
-                          alt="chevron"
-                          src={"/images/icons/header_dropdown_chevron.svg"}
-                        />
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="atlwh_Full"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                        >
+                          <path
+                            d="M5 7.5L10 12.5L15 7.5"
+                            className="lg:stroke-black stroke-white"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
                       </div>
                     )}
                   </div>
@@ -119,14 +128,14 @@ const Header = () => {
                       style={{ maxHeight: "0px" }}
                       className="lg:w-vw134 lg:absolute lg:top-vw40 lg:!max-h-[unset] lg:opacity-0 lg:pointer-events-none lg:group-hover:pointer-events-auto lg:scale-95 lg:group-hover:opacity-100 lg:group-hover:scale-100 lg:origin-bottom overflow-hidden lg:overflow-visible transition-all duration-500 lg:duration-300"
                     >
-                      <ul className="flex flex-col font-dm_sans font-medium tracking-normal border border-[#818181] bg-[rgba(255,255,255,0.80)] lg:rounded-vw8 rounded-[8px]">
+                      <ul className="flex flex-col font-medium tracking-normal border border-green bg-dullwhite lg:rounded-vw8 rounded-[8px]">
                         {navLink.dropDown.map((dropDownLink, ind) => (
                           <li
                             onClick={() => {
                               toggleSidebar();
                               toggleDropDown();
                             }}
-                            className="lg:w-vw104 lg:mx-auto lg:py-vw9 border-b border-[#DEDEDE] last:border-0 lg:px-0 p-3 lg:text-black/60 lg:hover:text-black text-black transition flex lg:justify-center"
+                            className="lg:w-vw104 lg:mx-auto lg:py-vw9 border-b border-green last:border-0 lg:px-0 p-3 lg:text-black lg:hover:text-green text-black transition flex lg:justify-center"
                             key={ind}
                           >
                             {" "}
@@ -153,12 +162,9 @@ const Header = () => {
               </div>
               <div
                 onClick={toggleSidebar}
-                className="rounded-full cursor-pointer lg:p-vw12 p-4 bg-black flex items-center justify-center"
+                className="rounded-full cursor-pointer lg:p-vw12 p-4 lg:bg-black lg:text-white bg-white text-black flex items-center justify-center"
               >
-                <HiOutlineShoppingBag
-                  color="white"
-                  className="lg:size-vw20 size-5"
-                />
+                <HiOutlineShoppingBag className="lg:size-vw20 size-5" />
               </div>
             </div>
           </nav>

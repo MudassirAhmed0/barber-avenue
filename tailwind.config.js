@@ -8,18 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        green: "#6FE451",
+        green: "#007958",
+        darkgreen: "#20392c",
         white: "#FFFFFF",
-        black: "#000",
-        "010D3E": "#010D3E",
-        "170F49": "#170F49",
-        "514F6E": "#514F6E",
-        "6F6C8F": "#6F6C8F",
-        "7B7B7B": "#7B7B7B",
-        ECECEC: "#ECECEC",
+        black: "#1B1B1B",
+        dullwhite: "#F5F5F5",
       },
       fontFamily: {
-        dm_sans: "var(--dm_sans)",
+        notoserif: "var(--notoserif)",
         inter: "var(--inter)",
       },
       fontSize: {

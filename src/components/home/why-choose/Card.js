@@ -12,9 +12,7 @@ const Card = ({ icon, iconClasses, title, desc, index }) => {
       <div className={`relative ${iconClasses}`}>
         <Image fill alt="icon" src={icon} />
       </div>
-      <h4 className="lg:text24 gradient_text font-bold ls096 mt-auto">
-        {title}
-      </h4>
+      <h4 className="lg:text24 font-bold ls096 mt-auto">{title}</h4>
       <p className="text16 font-inter ls016">{desc}</p>
     </div>
   );

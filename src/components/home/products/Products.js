@@ -34,7 +34,7 @@ const Products = () => {
             <Link
               href={"/"}
               key={index}
-              className="w-full sm:w-[31.5%] shadow-lg"
+              className="w-full sm:w-[31.5%] bg-white"
             >
               <div className="w-full flex flex-col">
                 <div className="w-full sm:h-[30vw] h-[300px] relative">

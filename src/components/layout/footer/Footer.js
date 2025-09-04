@@ -110,7 +110,7 @@ const paymentGateways = [
 ];
 const Footer = () => {
   return (
-    <footer className="bg-[#1D1D1D] text-white">
+    <footer className="bg-darkgreen text-white">
       <div className="myContainer lg:pb-vw57 py-10">
         <div className="flex justify-between flex-wrap capitalize lg:gap-0 gap-6">
           {navLinks.map((navLink, index) => (

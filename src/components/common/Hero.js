@@ -14,32 +14,27 @@ const Hero = () => {
     {
       title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
-      image:
-        "https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg", // urban street
+      image: "/images/home/hero/1.jpg",
     },
     {
       title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
-      image:
-        "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2070&auto=format&fit=crop", // building / community block
+      image: "/images/home/hero/2.jpg",
     },
     {
       title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
-      image:
-        "https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg", // street art / graffiti wall
+      image: "/images/home/hero/3.jpg",
     },
     {
       title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
-      image:
-        "https://images.pexels.com/photos/1570806/pexels-photo-1570806.jpeg", // street sign focus
+      image: "/images/home/hero/4.jpg",
     },
     {
       title: "Street Born.Blade Razed",
       subtitle: "Street Born. Blade Razed.",
-      image:
-        "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?q=80&w=2070&auto=format&fit=crop", // avenue / community vibe
+      image: "/images/home/hero/5.jpg",
     },
   ];
 
@@ -52,7 +47,7 @@ const Hero = () => {
         loop
         speed={800}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
-        pagination={{ clickable: true }}
+        // pagination={{ clickable: true }}
         className="atlwh_Full !absolute z-[2] w-full"
       >
         {heroSlides.map((heroSlide, index) => (
@@ -60,19 +55,18 @@ const Hero = () => {
             key={index}
             className="atlwh_Full !flex items-center !justify-center relative"
           >
-            <span className="hero_gradient atlwh_Full pointer-events-none z-[1]"></span>
-
             <div className="atlwh_Full">
               <img
                 fill
                 alt={heroSlide.subtitle}
                 src={heroSlide.image}
-                
                 className="object-cover w-full h-full absolute top-0 left-0"
               />
             </div>
-            <div className="relative z-[2] flex flex-col lg:gap-y-vw20 gap-y-4 items-center myContainer">
-              <h1 className="lg:text-vw80 lg:leading-vw90 text55">
+            <span className="atlwh_Full bg-black/50"></span>
+
+            <div className="relative z-[2] flex flex-col lg:gap-y-vw20 gap-y-4 items-center text-center myContainer">
+              <h1 className="lg:text-vw80 lg:leading-vw90 text55 text-white">
                 {heroSlide.title}
               </h1>
               <StandardBtn link={"/"} text={"shop now"} greenVersion />
