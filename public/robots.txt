@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://maaden.vercel.app
-
-# Sitemaps
-Sitemap: https://maaden.vercel.app/sitemap.xml
