@@ -12,28 +12,28 @@ import StandardBtn from "./link-buttons/StandardBtn";
 const Hero = () => {
   const heroSlides = [
     {
-      title: "Street Born.Blade Razed",
-      subtitle: "Street Born. Blade Razed.",
+      title: "Street Born.Barber Raised",
+      subtitle: "Street Born. Barber Raised.",
       image: "/images/home/hero/1.jpg",
     },
     {
-      title: "Street Born.Blade Razed",
-      subtitle: "Street Born. Blade Razed.",
+      title: "Street Born.Barber Raised",
+      subtitle: "Street Born. Barber Raised.",
       image: "/images/home/hero/2.jpg",
     },
     {
-      title: "Street Born.Blade Razed",
-      subtitle: "Street Born. Blade Razed.",
+      title: "Street Born.Barber Raised",
+      subtitle: "Street Born. Barber Raised.",
       image: "/images/home/hero/3.jpg",
     },
     {
-      title: "Street Born.Blade Razed",
-      subtitle: "Street Born. Blade Razed.",
+      title: "Street Born.Barber Raised",
+      subtitle: "Street Born. Barber Raised.",
       image: "/images/home/hero/4.jpg",
     },
     {
-      title: "Street Born.Blade Razed",
-      subtitle: "Street Born. Blade Razed.",
+      title: "Street Born.Barber Raised",
+      subtitle: "Street Born. Barber Raised.",
       image: "/images/home/hero/5.jpg",
     },
   ];

@@ -21,9 +21,8 @@ const About = () => {
         <div className="lg:w-[40%] w-full flex flex-col items-start lg:gap-y-vw20 gap-y-4">
           <h2 className="text55">About us</h2>
 
-          <p className="text22">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-            porro laudantium optio.
+          <p className="text18">
+          The Avenues brought us together — Barber Avenue is more than a brand; it’s a movement built for the community. Where barbering meets fashion. From tools and accessories to apparel and style, everything we create helps barbers and hustlers express themselves, elevate their craft, and turn opportunity into legacy.
           </p>
           <Link
             target="_blank"
