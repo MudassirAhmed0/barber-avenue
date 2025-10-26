@@ -52,20 +52,17 @@ const Header = () => {
       title: "Products",
       dropDown: [
         {
-          link: "",
-          title: "Trimmers",
+          link: "#",
+          title: "barber essentials",
+        },
+        
+        {
+          link: "#",
+          title: "Accessories",
         },
         {
-          link: "/",
-          title: "Shavers",
-        },
-        {
-          link: "/",
-          title: "Cologne Afershave",
-        },
-        {
-          link: "/",
-          title: "Clothing",
+          link: "#",
+          title: "Merchandise",
         },
       ],
     },
@@ -93,7 +90,7 @@ const Header = () => {
                     className="flex cursor-pointer lg:gap-x-vw4 gap-x-4 items-center lg:text-black lg:group-hover:text-green text-white transition"
                   >
                     {navLink.dropDown ? (
-                      <button className="capitalize">{navLink.title}</button>
+                      <button className="capitalize ">{navLink.title}</button>
                     ) : (
                       <Link onClick={toggleSidebar} href={`${navLink.link}`}>
                         {navLink.title}
@@ -126,22 +123,22 @@ const Header = () => {
                     <div
                       ref={dropDown}
                       style={{ maxHeight: "0px" }}
-                      className="lg:w-vw134 lg:absolute lg:top-vw40 lg:!max-h-[unset] lg:opacity-0 lg:pointer-events-none lg:group-hover:pointer-events-auto lg:scale-95 lg:group-hover:opacity-100 lg:group-hover:scale-100 lg:origin-bottom overflow-hidden lg:overflow-visible transition-all duration-500 lg:duration-300"
+                      className="lg:w-[12vw] lg:absolute lg:left-[-3vw] lg:top-vw40 lg:!max-h-[unset] lg:opacity-0 lg:pointer-events-none lg:group-hover:pointer-events-auto lg:scale-95 lg:group-hover:opacity-100 lg:group-hover:scale-100 lg:origin-bottom overflow-hidden lg:overflow-visible transition-all duration-500 lg:duration-300"
                     >
-                      <ul className="flex flex-col font-medium tracking-normal border border-green bg-dullwhite lg:rounded-vw8 rounded-[8px]">
+                      <ul className="flex flex-col  font-medium tracking-normal border border-green bg-dullwhite lg:rounded-vw8 rounded-[8px]">
                         {navLink.dropDown.map((dropDownLink, ind) => (
                           <li
                             onClick={() => {
                               toggleSidebar();
                               toggleDropDown();
                             }}
-                            className="lg:w-vw104 lg:mx-auto lg:py-vw9 border-b border-green last:border-0 lg:px-0 p-3 lg:text-black lg:hover:text-green text-black transition flex lg:justify-center"
+                            className=" lg:mx-auto lg:py-vw9 border-b border-green last:border-0 lg:px-0 p-3 lg:text-black lg:hover:text-green text-black transition flex lg:justify-center"
                             key={ind}
                           >
                             {" "}
                             <Link
                               href={`${dropDownLink.link}`}
-                              className="w-full lg:text-center"
+                              className="w-full lg:text-center "
                             >
                               {dropDownLink.title}
                             </Link>

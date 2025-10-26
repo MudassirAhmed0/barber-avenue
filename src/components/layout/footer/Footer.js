@@ -21,19 +21,16 @@ const navLinks = [
       },
       {
         link: "",
-        title: "Trimmers",
+        title: "Barber Essentials",
+      },
+      
+      {
+        link: "/",
+        title: "Accessories",
       },
       {
         link: "/",
-        title: "Shavers",
-      },
-      {
-        link: "/",
-        title: "Cologne Afershave",
-      },
-      {
-        link: "/",
-        title: "Clothing",
+        title: "Merchandise",
       },
     ],
   },
@@ -130,7 +127,7 @@ const Footer = () => {
               </ul>
             </div>
           ))}
-          <div className="lg:w-[24%] w-full flex flex-col lg:gap-y-vw20 gap-y-3 lg:text14 mtext14 font-inter">
+          {/* <div className="lg:w-[24%] w-full flex flex-col lg:gap-y-vw20 gap-y-3 lg:text14 mtext14 font-inter">
             <span className="font-bold lg:text22 mtext18">Working hours</span>
             <ul className="flex flex-col lg:gap-y-vw12 gap-y-3">
               <li>M - F / 9AM - 4PM</li>
@@ -141,7 +138,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="lg:w-[24%] w-full flex flex-col lg:gap-y-vw20 gap-y-3 lg:text14 mtext14 font-inter">
             <span className="font-bold lg:text22 mtext18">
               Be Part of Street&apos;s
