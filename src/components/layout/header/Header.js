@@ -70,7 +70,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full bg-white header_bg z-100">
+      <header className="fixed top-0 left-0 w-full bg-white header_bg z-[100]">
         <div className="flex items-center justify-between lg:px-vw50 lg:py-vw20 px-5 py-10">
           <Link
             href={"/"}
