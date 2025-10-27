@@ -1,22 +1,41 @@
+'use client'
+import useCarousel from "@/hooks/useCarousel";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { IoLogoInstagram } from "react-icons/io5";
 
+const images=[
+  {
+    image:"/images/home/about/1.jpg",
+  },
+  {
+    image:"/images/home/about/2.jpg",
+  },
+  {
+    image:"/images/home/about/3.jpg",
+  },
+  {
+    image:"/images/home/about/4.jpg",
+  },
+]
+
 const About = () => {
+  const {current} = useCarousel({length:images?.length})
   return (
     <section className="relative lg:py-vw180 py-[60px] sm:py-[120px]">
       <div className="flex flex-wrap items-center justify-center lg:gap-vw60 gap-4 relative z-[2] myContainer">
         <div className="lg:w-[40%] lg:h-[30vw] w-full h-[300px] relative rounded-2xl overflow-hidden">
-          <Image
+       {images?.map((item,index)=> <Image
+       key={item.image}
+            src={item.image}
+            alt="product"
             fill
-            alt="about"
-            src={
-              "https://images.pexels.com/photos/14073866/pexels-photo-14073866.jpeg"
-            }
-            unoptimized
-            className="object-cover"
-          />
+            className={`object-cover  transition-opacity duration-1000 ease-in-out ${
+            index === current ? "opacity-100 z-10" : "opacity-0 z-0"
+          }`}
+            priority={index === 0}
+          />)}
         </div>
         <div className="lg:w-[40%] w-full flex flex-col items-start lg:gap-y-vw20 gap-y-4">
           <h2 className="text55">About us</h2>

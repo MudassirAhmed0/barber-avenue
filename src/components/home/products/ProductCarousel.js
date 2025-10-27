@@ -1,18 +1,11 @@
 "use client";
+import useCarousel from "@/hooks/useCarousel";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+ 
 
 const ProductCarousel = ({ images = [] }) => {
-  const [current, setCurrent] = useState(0);
-
-  useEffect(() => {
-    if (!images.length) return;
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000); // change slide every 3s
-    return () => clearInterval(interval);
-  }, [images.length]);
+  const {current} = useCarousel({length:images?.length})
 
   return (
     <div className="w-full sm:h-[30vw] h-[300px] relative overflow-hidden">

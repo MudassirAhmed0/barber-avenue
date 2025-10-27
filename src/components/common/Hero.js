@@ -31,6 +31,11 @@ const Hero = () => {
       subtitle: "Street Born. Barber Raised.",
       image: "/images/home/hero/4.jpg",
     },
+    {
+      title: "Street Born.Barber Raised",
+      subtitle: "Street Born. Barber Raised.",
+      image: "/images/home/hero/5.jpg",
+    },
   
   ];
 
